@@ -9,7 +9,7 @@ import { withStyles } from '@material-ui/core/styles'
 //     },
 // });
 
-class MainPage extends React.Component {
+class Home extends React.Component {
     render() {
         return (
             <div>
@@ -19,4 +19,4 @@ class MainPage extends React.Component {
     }
 }
 
-export default MainPage;
+export default Home;
