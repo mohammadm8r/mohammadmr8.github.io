@@ -1,15 +1,25 @@
 import './App.css';
+import React , { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          What you know about rolling down in the deep?
-        </p>
-      </header>
-    </div>
-  );
+import MainPage from "./MainPage/MainPage"
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div>
+          <Switch>
+            <Route exact path="/mainpage" component={MainPage} />
+          </Switch>
+        </div>
+      </Router>
+    )
+  }
 }
 
 export default App;
