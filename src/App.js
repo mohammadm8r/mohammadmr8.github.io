@@ -14,8 +14,10 @@ class App extends Component {
     return (
       <Router basename='/'>
         <div>
+          <Link to="/">Home</Link>
           <Link to="/mainpage">About</Link>
           <Switch>
+            <Route exact path="/" component={Home} />
             <Route exact path="/mainpage" component={MainPage} />
           </Switch>
         </div>
@@ -23,5 +25,5 @@ class App extends Component {
     )
   }
 }
-
+const Home = () => <div><h2>Home</h2></div>
 export default App;
