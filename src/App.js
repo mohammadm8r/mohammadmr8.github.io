@@ -14,8 +14,6 @@ class App extends Component {
     return (
       <Router basename='/'>
         <div>
-          <Link to="/">Home</Link>
-          <Link to="/mainpage">About</Link>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/mainpage" component={MainPage} />
